@@ -17,7 +17,6 @@ const todoSchema: Schema = new Schema({
         required: true
     }
 
-}, { timestamps: true })
-
+})
 
 export default model<ITodo>('Todo', todoSchema)
