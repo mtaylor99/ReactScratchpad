@@ -6,7 +6,9 @@ const getTodos = async (req: Request, res: Response): Promise<void> => {
     try {
         const todos: ITodo[] = await Todo.find()
         res.status(200).json({ todos })
+        console.log("Get todos: " + todos.length);
     } catch (error) {
+        console.log("Error: " + error)
         throw error
     }
 }

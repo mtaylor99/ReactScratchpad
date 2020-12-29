@@ -10,7 +10,8 @@ const PORT: string | number = process.env.PORT || 4000
 app.use(cors())
 app.use(todoRoutes)
 
-const uri: string = `mongodb://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@127.0.0.1:27017//${process.env.MONGO_DB}?retryWrites=true&w=majority`
+//const uri: string = `mongodb://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@127.0.0.1:27017//${process.env.MONGO_DB}?retryWrites=true&w=majority`
+const uri: string = `mongodb://127.0.0.1:27017/todo`
 
 const options = { useNewUrlParser: true, useUnifiedTopology: true }
 mongoose.set('useFindAndModify', false)
