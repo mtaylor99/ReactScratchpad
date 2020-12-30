@@ -14,6 +14,7 @@ const App: React.FC = () => {
 
   const fetchTodos = (): void => {
     getTodos()
+      // eslint-disable-next-line no-shadow
       .then(({ data: { todos } }: ITodo[] | any) => setTodos(todos))
       .catch((err: Error) => console.log(err));
   };

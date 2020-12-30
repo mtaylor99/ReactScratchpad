@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 
 type Props = TodoProps & {
@@ -15,12 +16,14 @@ const Todo: React.FC<Props> = ({ todo, updateTodo, deleteTodo }) => {
       </div>
       <div className="Card--button">
         <button
+          type="button"
           onClick={() => updateTodo(todo)}
           className={todo.status ? 'hide-button' : 'Card--button__done'}
         >
           Complete
         </button>
         <button
+          type="button"
           onClick={() => deleteTodo(todo._id)}
           className="Card--button__delete"
         >

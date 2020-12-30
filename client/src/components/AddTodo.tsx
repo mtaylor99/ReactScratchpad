@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/ban-types */
+/* eslint-disable jsx-a11y/label-has-associated-control */
+/* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 
 type Props = {
@@ -26,7 +29,7 @@ const AddTodo: React.FC<Props> = ({ saveTodo }) => {
           <input onChange={handleForm} type="text" id="description" />
         </div>
       </div>
-      <button disabled={formData === undefined}>Add Todo</button>
+      <button type="button" disabled={formData === undefined}>Add Todo</button>
     </form>
   );
 };
