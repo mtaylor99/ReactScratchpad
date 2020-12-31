@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 import cors from 'cors';
 import todoRoutes from './routes';
 
-const app: Express = express();
+export const app: Express = express();
 
 const PORT: string | number = process.env.PORT || 4000;
 

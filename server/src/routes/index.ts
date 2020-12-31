@@ -1,4 +1,5 @@
 import { Router } from 'express';
+import { getPing } from '../controllers/ping';
 import {
   getTodos,
   addTodo,
@@ -7,6 +8,8 @@ import {
 } from '../controllers/todos';
 
 const router: Router = Router();
+
+router.get('/ping', getPing);
 
 router.get('/todos', getTodos);
 
