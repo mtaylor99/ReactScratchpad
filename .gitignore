@@ -41,7 +41,6 @@ client/.eslintcache
 
 # json-server db
 db.json
-.vscode/launch.json
 /.vs
 webpack/webpack.config.base.js
 package-lock.json
