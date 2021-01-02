@@ -8,13 +8,10 @@
             "type": "node",
             "request": "launch",
             "name": "Launch API Server",
-            "protocol": "inspector",
-            "program": "${workspaceFolder}/server/src/app.ts",
+            "program": "${workspaceFolder}/server/dist/js/app.js",
             "sourceMaps": true,
             "trace": "all",
-            "outFiles": [
-                "${workspaceFolder}/dist/**/*.js"
-            ]
+            "outFiles": ["${workspaceFolder}/server/dist/**/*.js"]
         },
         {
             "type": "pwa-chrome",
